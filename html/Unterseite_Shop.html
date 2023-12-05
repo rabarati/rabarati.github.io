@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop mit Geldfilter</title>
+
+    <!-- Füge das Bootstrap CSS hinzu -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigationsleiste mit Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Vienna Hoop Knowledge Shop</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Hauptseite.html">Startseite</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Impressum</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Geldfilter-Buttons -->
+    <div class="container my-5">
+      <h2>Produkte filtern:</h2>
+      <div class="btn-group" role="group" aria-label="Geldfilter">
+        <button type="button" class="btn btn-primary" data-filter="0-50">0-50 EUR</button>
+        <button type="button" class="btn btn-primary" data-filter="51-100">51-100 EUR</button>
+        <button type="button" class="btn btn-primary" data-filter="101-150">101-150 EUR</button>
+        <button type="button" class="btn btn-primary" data-filter="150-100000">Über 150 EUR</button>
+        <button type="button" class="btn btn-primary" data-filter="0-100000">Alle</button>
+      </div>
+    </div>
+
+    <!-- Shop-Bereich -->
+<div class="container">
+    <div class="row" id="products">
+      <div class="col-md-4">
+        <div class="card" data-price="61">
+          <img src="https://m.media-amazon.com/images/I/A1XBkGAgYOL._AC_SX569_.jpg" class="card-img-top" alt="Produkt 1">
+          <div class="card-body">
+            <h5 class="card-title">Spalding Zi/O TF Excel Indoor-Outdoor Basketball</h5>
+            <p class="card-text">Marke: Spalding<br>
+                Material: Kunstleder<br>
+                Farbe: Zi/O Excel TF – Braun<br>
+                Altersspektrum (Beschreibung): Erwachsener<br>
+                Artikelgewicht: 1 Pfund</p>
+            <p class="card-text">Preis: 61 EUR</p>
+            <a href="https://www.amazon.de/Spalding-Excel-76940Z-Unisex-basketballs/dp/B08QJL66SY/ref=sr_1_1?geniuslink=true&keywords=spalding%2Bnba%2Bzio%2Bindoor%2Boutdoor%2Bbasketball%2B29%2B5&qid=1697536190&sr=8-1&th=1" class="btn btn-primary">Zur Webseite</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" data-price="75">
+          <img src="https://m.media-amazon.com/images/I/91v6Jz3OteL._AC_SX679_.jpg" class="card-img-top" alt="Produkt 2">
+          <div class="card-body">
+            <h5 class="card-title">Produkt 2</h5>
+            <p class="card-text">Beschreibung des Produkts 2.</p>
+            <p class="card-text">Preis: 75 EUR</p>
+            <a href="#" class="btn btn-primary">In den Warenkorb</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" data-price="110">
+          <img src="https://m.media-amazon.com/images/I/71Kbaz4DxnS._AC_SX679_.jpg" class="card-img-top" alt="Produkt 3">
+          <div class="card-body">
+            <h5 class="card-title">Produkt 3</h5>
+            <p class="card-text">Beschreibung des Produkts 3.</p>
+            <p class="card-text">Preis: 110 EUR</p>
+            <a href="#" class="btn btn-primary">In den Warenkorb</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" data-price="160">
+          <img src="https://m.media-amazon.com/images/I/81-a-fRZhoL._AC_SX679_.jpg" class="card-img-top" alt="Produkt 4">
+          <div class="card-body">
+            <h5 class="card-title">Produkt 4</h5>
+            <p class="card-text">Beschreibung des Produkts 4.</p>
+            <p class="card-text">Preis: 160 EUR</p>
+            <a href="#" class="btn btn-primary">In den Warenkorb</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weitere Produkte hier einfügen -->
+    </div>
+  </div>
+
+    <!-- Copyright-Bereich mit Bootstrap (am unteren Ende) -->
+    <footer class="bg-dark text-white text-center py-3">
+      &copy; Geldfilter Shop. Alle Rechte vorbehalten.
+    </footer>
+
+    <!-- Füge das Bootstrap JS hinzu (am besten am Ende des <body> Tags, damit es die Seite nicht blockiert) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      // Geldfilter-Buttons
+      document.addEventListener('click', function(e) {
+        if (e.target && e.target.dataset.filter) {
+          const filterRange = e.target.dataset.filter.split('-');
+          filterProducts(parseInt(filterRange[0]), parseInt(filterRange[1]));
+        }
+      });
+
+      function filterProducts(minPrice, maxPrice) {
+        const products = document.querySelectorAll('.card');
+        products.forEach(product => {
+          const price = parseInt(product.getAttribute('data-price'));
+          if (minPrice <= price && price <= maxPrice) {
+            product.style.display = 'block';
+          } else if (minPrice === 0 && maxPrice === 100) {
+            product.style.display = 'block';
+          } else {
+            product.style.display = 'none';
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; /* Neue Zeile, wenn der Platz nicht ausreicht */
+  justify-content: space-between; /* Platziere die Flexboxen in 2x2-Anordnung */
+}
+
+.flex-item {
+  background-color: #333; /* Hintergrundfarbe der Flexboxen */
+  color: white; /* Textfarbe */
+  border-radius: 10px; /* Abrundung der Flexboxen */
+  padding: 20px; /* Innenabstand */
+  margin: 10px; /* Außenabstand */
+  flex: 0 0 calc(50% - 20px); /* Breite der Flexboxen (50% abzüglich des Abstands) */
+}
+.flex-header {
+  border: 2px solid #333; /* 2px dicker Rahmen mit dunkler Farbe */
+  padding: 10px; /* Innenabstand */
+  border-radius: 10px; /* Abrundung */
+  margin-bottom: 10px; /* Abstand zur darunterliegenden Textbox */
+  background-color: #ff8c00;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch; /* Elemente dehnen sich vertikal */
+}
+
+.flex-item {
+  background-color: #333;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  flex: 0 0 calc(50% - 20px);
+  box-sizing: border-box; /* Berücksichtige Padding und Border in der Berechnung */
+}
+
+.flex-header {
+  border: 2px solid #333;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #ff8c00;
+}
+
+/* Media Queries für responsives Design */
+@media (max-width: 767.98px) {
+  .flex-item {
+    flex: 0 0 100%; /* Auf kleinen Bildschirmen 100% Breite */
+    margin: 10px 0; /* Platz zwischen den Elementen */
+  }
+}

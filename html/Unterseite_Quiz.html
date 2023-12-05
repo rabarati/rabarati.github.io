@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  <link rel="stylesheet" href="../css/Unterseite_Quiz.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Vienna Hoop Knowledge</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="Hauptseite.html">Startseite</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Unterseite_Training-Drills.html">Training-Drills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Unterseite_Verein.html">Basket-Map</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Unterseite_Quiz.html">Basket-Quiz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Unterseite_Shop.html">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Forum</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Impressum</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="app">
+  <h1>Basket Quiz</h1>
+  <div class="quiz">
+    <h2 id="question">Fragen kommen hier her</h2>
+    <div id="answer-buttons">
+      <button class="btn">Antwort 1</button>
+      <button class="btn">Antwort 2</button>
+      <button class="btn">Antwort 3</button>
+      <button class="btn">Antwort 4</button>
+    </div>
+    <button id="next-btn">Next</button>
+  </div>
+</div>
+
+ <!-- Copyright-Bereich mit Bootstrap (am unteren Ende) -->
+ <footer class="bg-dark text-white text-center py-3 fixed-bottom">
+  &copy; Vienna Hoop Knowledge. Alle Rechte vorbehalten.
+</footer>
+
+<!-- Füge das Bootstrap JS hinzu (am besten am Ende des <body> Tags, damit es die Seite nicht blockiert) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="../js/js_Quiz.js"></script>
+</body>
+</html>

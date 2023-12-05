@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vereine in Wien</title>
+
+    <!-- Verlinke das Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+</head>
+<body style="background-color: #f2f2f2">
+    <!-- Navigationsleiste mit Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Vienna Hoop Knowledge</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Startseite</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Training-Drills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Basket-Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Forum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Impressum</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Platzhalter für den Hauptinhalt -->
+    <div class="container my-5">
+      <h1>Vereine in Wien</h1>
+
+      <div id="filter">
+        <label for="bezirkFilter">Bezirk:</label>
+        <select id="bezirkFilter">
+            <option value="Alle">Alle Bezirke</option>
+            <option value="1">1. Bezirk</option>
+            <option value="2">2. Bezirk</option>
+            <option value="3">3. Bezirk</option>
+            <option value="4">4. Bezirk</option>
+            <option value="5">5. Bezirk</option>
+            <option value="6">6. Bezirk</option>
+            <option value="7">7. Bezirk</option>
+            <option value="8">8. Bezirk</option>
+            <option value="9">9. Bezirk</option>
+            <option value="10">10. Bezirk</option>
+            <option value="11">11. Bezirk</option>
+            <option value="12">12. Bezirk</option>
+            <option value="13">13. Bezirk</option>
+            <option value="14">14. Bezirk</option>
+            <option value="15">15. Bezirk</option>
+            <option value="16">16. Bezirk</option>
+            <option value="17">17. Bezirk</option>
+            <option value="18">18. Bezirk</option>
+            <option value="19">19. Bezirk</option>
+            <option value="20">20. Bezirk</option>
+            <option value="21">21. Bezirk</option>
+            <option value="22">22. Bezirk</option>
+            <option value="23">23. Bezirk</option>
+            <!-- Weitere Bezirke hier einfügen -->
+        </select>
+      </div>
+
+      <div id="vereine">
+        <!-- Hier werden die Vereine angezeigt -->
+      </div>
+    </div>
+
+    <!-- Füge das Bootstrap JS hinzu (am besten am Ende des <body> Tags, damit es die Seite nicht blockiert) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- JavaScript-Code für die Vereinsanzeige -->
+    <script src="../js/js_Verein.js"></script>
+</body>
+</html>
